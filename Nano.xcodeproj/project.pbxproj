@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1CD84A95296AA907000D321E /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD84A94296AA907000D321E /* Home.swift */; };
+		1CD84A9B296AACDD000D321E /* Gilroy-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1CD84A9A296AACDD000D321E /* Gilroy-Medium.ttf */; };
+		1CD84A9D296AACFF000D321E /* Gilroy-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1CD84A9C296AACFF000D321E /* Gilroy-Regular.ttf */; };
+		1CD84A9F296AAD0A000D321E /* Gilroy-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1CD84A9E296AAD0A000D321E /* Gilroy-Bold.ttf */; };
 		F56D8FE2296A94DD008EC31B /* NanoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56D8FE1296A94DD008EC31B /* NanoApp.swift */; };
 		F56D8FE4296A94DD008EC31B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56D8FE3296A94DD008EC31B /* ContentView.swift */; };
 		F56D8FE6296A94DE008EC31B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F56D8FE5296A94DE008EC31B /* Assets.xcassets */; };
@@ -15,6 +19,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1CD84A94296AA907000D321E /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		1CD84A9A296AACDD000D321E /* Gilroy-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-Medium.ttf"; sourceTree = "<group>"; };
+		1CD84A9C296AACFF000D321E /* Gilroy-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-Regular.ttf"; sourceTree = "<group>"; };
+		1CD84A9E296AAD0A000D321E /* Gilroy-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-Bold.ttf"; sourceTree = "<group>"; };
+		1CD84AA0296AADA5000D321E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		F56D8FDE296A94DD008EC31B /* Nano.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nano.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F56D8FE1296A94DD008EC31B /* NanoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NanoApp.swift; sourceTree = "<group>"; };
 		F56D8FE3296A94DD008EC31B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -34,6 +43,46 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1CD84A91296AA8AE000D321E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1CD84A96296AAAC6000D321E /* Components */,
+				1CD84A94296AA907000D321E /* Home.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1CD84A92296AA8B7000D321E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1CD84A93296AA8C2000D321E /* ViewsModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewsModel;
+			sourceTree = "<group>";
+		};
+		1CD84A96296AAAC6000D321E /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		1CD84A99296AAC72000D321E /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				1CD84A9E296AAD0A000D321E /* Gilroy-Bold.ttf */,
+				1CD84A9A296AACDD000D321E /* Gilroy-Medium.ttf */,
+				1CD84A9C296AACFF000D321E /* Gilroy-Regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		F56D8FD5296A94DD008EC31B = {
 			isa = PBXGroup;
 			children = (
@@ -53,6 +102,11 @@
 		F56D8FE0296A94DD008EC31B /* Nano */ = {
 			isa = PBXGroup;
 			children = (
+				1CD84AA0296AADA5000D321E /* Info.plist */,
+				1CD84A99296AAC72000D321E /* Fonts */,
+				1CD84A93296AA8C2000D321E /* ViewsModel */,
+				1CD84A92296AA8B7000D321E /* Models */,
+				1CD84A91296AA8AE000D321E /* Views */,
 				F56D8FE1296A94DD008EC31B /* NanoApp.swift */,
 				F56D8FE3296A94DD008EC31B /* ContentView.swift */,
 				F56D8FE5296A94DE008EC31B /* Assets.xcassets */,
@@ -129,7 +183,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				F56D8FE9296A94DE008EC31B /* Preview Assets.xcassets in Resources */,
+				1CD84A9B296AACDD000D321E /* Gilroy-Medium.ttf in Resources */,
+				1CD84A9F296AAD0A000D321E /* Gilroy-Bold.ttf in Resources */,
 				F56D8FE6296A94DE008EC31B /* Assets.xcassets in Resources */,
+				1CD84A9D296AACFF000D321E /* Gilroy-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,6 +199,7 @@
 			files = (
 				F56D8FE4296A94DD008EC31B /* ContentView.swift in Sources */,
 				F56D8FE2296A94DD008EC31B /* NanoApp.swift in Sources */,
+				1CD84A95296AA907000D321E /* Home.swift in Sources */,
 				F56D8FF0296AA59F008EC31B /* TEST.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -273,11 +331,13 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Nano/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Nano/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -301,11 +361,13 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Nano/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Nano/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
