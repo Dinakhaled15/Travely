@@ -9,18 +9,43 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        ZStack {
+            Color.black
+                .edgesIgnoringSafeArea(.all)
+            VStack {
+            Image("DINA1")
+                . resizable()
+                .padding ()
+                .aspectRatio(1, contentMode: .fit)
+                .padding()
+                .offset(x: 0, y: -50)
+            
+//            VStack {
+                Text("Adventure Awaits")
+                    .foregroundColor(.white)
+                    .font(.largeTitle)
+                Text("Plan your Trip and Enjoy a Stress-free Travel full of Adventures and Memories ")
+                    .foregroundColor(.white)
+                    .padding()
+                
+                
+            }
+            
+            
+            
+            
         }
-        .padding()
+        
+        
+        
+        
     }
+        
+        struct ContentView_Previews: PreviewProvider {
+            static var previews: some View {
+                ContentView()
+            }
+        }
+        
 }
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
-}
