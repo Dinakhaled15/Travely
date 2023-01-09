@@ -16,6 +16,8 @@
 		F56D8FE6296A94DE008EC31B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F56D8FE5296A94DE008EC31B /* Assets.xcassets */; };
 		F56D8FE9296A94DE008EC31B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F56D8FE8296A94DE008EC31B /* Preview Assets.xcassets */; };
 		F56D8FF0296AA59F008EC31B /* TEST.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56D8FEF296AA59F008EC31B /* TEST.swift */; };
+		F56D8FF4296B3283008EC31B /* emergency page.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56D8FF3296B3283008EC31B /* emergency page.swift */; };
+		F56D8FF6296B3894008EC31B /* search bar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56D8FF5296B3894008EC31B /* search bar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		F56D8FE5296A94DE008EC31B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F56D8FE8296A94DE008EC31B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F56D8FEF296AA59F008EC31B /* TEST.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TEST.swift; sourceTree = "<group>"; };
+		F56D8FF3296B3283008EC31B /* emergency page.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "emergency page.swift"; sourceTree = "<group>"; };
+		F56D8FF5296B3894008EC31B /* search bar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "search bar.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +113,8 @@
 				1CD84A91296AA8AE000D321E /* Views */,
 				F56D8FE1296A94DD008EC31B /* NanoApp.swift */,
 				F56D8FE3296A94DD008EC31B /* ContentView.swift */,
+				F56D8FF3296B3283008EC31B /* emergency page.swift */,
+				F56D8FF5296B3894008EC31B /* search bar.swift */,
 				F56D8FE5296A94DE008EC31B /* Assets.xcassets */,
 				F56D8FE7296A94DE008EC31B /* Preview Content */,
 				F56D8FEF296AA59F008EC31B /* TEST.swift */,
@@ -201,6 +207,8 @@
 				F56D8FE2296A94DD008EC31B /* NanoApp.swift in Sources */,
 				1CD84A95296AA907000D321E /* Home.swift in Sources */,
 				F56D8FF0296AA59F008EC31B /* TEST.swift in Sources */,
+				F56D8FF6296B3894008EC31B /* search bar.swift in Sources */,
+				F56D8FF4296B3283008EC31B /* emergency page.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
