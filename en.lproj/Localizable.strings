@@ -1,0 +1,17 @@
+/* 
+  Localizable.strings
+  Nano
+
+  Created by Ashwaq Azan on 16/06/1444 AH.
+  
+*/
+//HOME
+"plan" = "PLAN";
+"your_travel" = "YOUR TRAVEL";
+"trip_count_down" = "Trip count down";
+"schedule_your_next_trip" = "Schedule your next trip";
+"hello_traveler" = "Hello Traveler!";
+"pre_travel_checklist" = "PRE-TRAVEL CHECKLIST";
+"places" = "PLACES";
+"staying" = "STAYING";
+"emergency_numbers" = "EMERGENCY NUMBERS";
