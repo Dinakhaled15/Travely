@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C596406296BF4B2005FD1E3 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1C596408296BF4B2005FD1E3 /* Localizable.strings */; };
+		1C59640B296BF504005FD1E3 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1C59640D296BF504005FD1E3 /* Localizable.strings */; };
+		1C59640F296C03AE005FD1E3 /* Tajawal-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1C59640E296C03AE005FD1E3 /* Tajawal-Medium.ttf */; };
+		1C596411296C03BE005FD1E3 /* Tajawal-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1C596410296C03BE005FD1E3 /* Tajawal-Regular.ttf */; };
+		1C596413296C03C9005FD1E3 /* Tajawal-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1C596412296C03C9005FD1E3 /* Tajawal-Bold.ttf */; };
 		1CD84A95296AA907000D321E /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD84A94296AA907000D321E /* Home.swift */; };
 		1CD84A9B296AACDD000D321E /* Gilroy-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1CD84A9A296AACDD000D321E /* Gilroy-Medium.ttf */; };
 		1CD84A9D296AACFF000D321E /* Gilroy-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1CD84A9C296AACFF000D321E /* Gilroy-Regular.ttf */; };
@@ -19,6 +24,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1C596407296BF4B2005FD1E3 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
+		1C59640C296BF504005FD1E3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		1C59640E296C03AE005FD1E3 /* Tajawal-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Tajawal-Medium.ttf"; sourceTree = "<group>"; };
+		1C596410296C03BE005FD1E3 /* Tajawal-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Tajawal-Regular.ttf"; sourceTree = "<group>"; };
+		1C596412296C03C9005FD1E3 /* Tajawal-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Tajawal-Bold.ttf"; sourceTree = "<group>"; };
 		1CD84A94296AA907000D321E /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		1CD84A9A296AACDD000D321E /* Gilroy-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-Medium.ttf"; sourceTree = "<group>"; };
 		1CD84A9C296AACFF000D321E /* Gilroy-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-Regular.ttf"; sourceTree = "<group>"; };
@@ -76,6 +86,9 @@
 		1CD84A99296AAC72000D321E /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				1C596412296C03C9005FD1E3 /* Tajawal-Bold.ttf */,
+				1C596410296C03BE005FD1E3 /* Tajawal-Regular.ttf */,
+				1C59640E296C03AE005FD1E3 /* Tajawal-Medium.ttf */,
 				1CD84A9E296AAD0A000D321E /* Gilroy-Bold.ttf */,
 				1CD84A9A296AACDD000D321E /* Gilroy-Medium.ttf */,
 				1CD84A9C296AACFF000D321E /* Gilroy-Regular.ttf */,
@@ -86,6 +99,8 @@
 		F56D8FD5296A94DD008EC31B = {
 			isa = PBXGroup;
 			children = (
+				1C596408296BF4B2005FD1E3 /* Localizable.strings */,
+				1C59640D296BF504005FD1E3 /* Localizable.strings */,
 				F56D8FE0296A94DD008EC31B /* Nano */,
 				F56D8FDF296A94DD008EC31B /* Products */,
 			);
@@ -166,6 +181,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ar,
 			);
 			mainGroup = F56D8FD5296A94DD008EC31B;
 			productRefGroup = F56D8FDF296A94DD008EC31B /* Products */;
@@ -182,10 +198,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C59640F296C03AE005FD1E3 /* Tajawal-Medium.ttf in Resources */,
 				F56D8FE9296A94DE008EC31B /* Preview Assets.xcassets in Resources */,
+				1C596406296BF4B2005FD1E3 /* Localizable.strings in Resources */,
 				1CD84A9B296AACDD000D321E /* Gilroy-Medium.ttf in Resources */,
+				1C59640B296BF504005FD1E3 /* Localizable.strings in Resources */,
 				1CD84A9F296AAD0A000D321E /* Gilroy-Bold.ttf in Resources */,
+				1C596411296C03BE005FD1E3 /* Tajawal-Regular.ttf in Resources */,
 				F56D8FE6296A94DE008EC31B /* Assets.xcassets in Resources */,
+				1C596413296C03C9005FD1E3 /* Tajawal-Bold.ttf in Resources */,
 				1CD84A9D296AACFF000D321E /* Gilroy-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -205,6 +226,25 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1C596408296BF4B2005FD1E3 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1C596407296BF4B2005FD1E3 /* ar */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		1C59640D296BF504005FD1E3 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1C59640C296BF504005FD1E3 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		F56D8FEA296A94DE008EC31B /* Debug */ = {
