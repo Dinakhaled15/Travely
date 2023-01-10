@@ -41,15 +41,18 @@ struct Home: View {
                 
                 HStack{
                     VStack{
-                        VStack{
-                            Spacer()
-                            Text("pre_travel_checklist").multilineTextAlignment(.center).font(Font.custom(Locale.preferredLanguages[0] == "en" ? "Gilroy-Medium": "Tajawal-Medium", size: 21)).foregroundColor(.white)
-                            Spacer()
-                      
-                            Image(systemName: Locale.preferredLanguages[0] == "en" ? "arrow.right" : "arrow.left").foregroundColor(Color("primary")).padding(EdgeInsets(top: 0, leading: 0, bottom: 8, trailing: 16)).frame(maxWidth: .infinity, alignment: .trailing)
-                        }.frame(maxWidth: 165.0,maxHeight: 150,
-                                alignment: .center)
-                            .background(Color("sectionsBackground"))  .cornerRadius(10) .padding(EdgeInsets(top: 8, leading: 0, bottom: 4, trailing: 0))
+                        NavigationLink(destination: PreTravelChecklist() ){
+                            VStack{
+                                Spacer()
+                                Text("pre_travel_checklist").multilineTextAlignment(.center).font(Font.custom(Locale.preferredLanguages[0] == "en" ? "Gilroy-Medium": "Tajawal-Medium", size: 21)).foregroundColor(.white)
+                                Spacer()
+                          
+                                Image(systemName: Locale.preferredLanguages[0] == "en" ? "arrow.right" : "arrow.left").foregroundColor(Color("primary")).padding(EdgeInsets(top: 0, leading: 0, bottom: 8, trailing: 16)).frame(maxWidth: .infinity, alignment: .trailing)
+                            }.frame(maxWidth: 165.0,maxHeight: 150,
+                                    alignment: .center)
+                                .background(Color("sectionsBackground"))  .cornerRadius(10) .padding(EdgeInsets(top: 8, leading: 0, bottom: 4, trailing: 0))
+                        }
+                
                         
                         Text("staying").frame(maxWidth: 165.0,maxHeight: 300,
                                                   alignment: .center).font(Font.custom(Locale.preferredLanguages[0] == "en" ? "Gilroy-Medium": "Tajawal-Medium", size: 21)).foregroundColor(Color("subtitle"))
@@ -81,6 +84,9 @@ struct Home: View {
             }.frame(maxWidth: .infinity, maxHeight: .infinity,
                     alignment: .topLeading).padding(16).background(.black)
         }
+        
+    
+       
     }
 }
 

@@ -12,6 +12,11 @@
 		1C59640F296C03AE005FD1E3 /* Tajawal-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1C59640E296C03AE005FD1E3 /* Tajawal-Medium.ttf */; };
 		1C596411296C03BE005FD1E3 /* Tajawal-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1C596410296C03BE005FD1E3 /* Tajawal-Regular.ttf */; };
 		1C596413296C03C9005FD1E3 /* Tajawal-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1C596412296C03C9005FD1E3 /* Tajawal-Bold.ttf */; };
+		1C596415296C0768005FD1E3 /* PreTravelChecklist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C596414296C0768005FD1E3 /* PreTravelChecklist.swift */; };
+		1C596417296C21D2005FD1E3 /* TravelPacking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C596416296C21D2005FD1E3 /* TravelPacking.swift */; };
+		1C59641B296D4B10005FD1E3 /* PackingSections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C59641A296D4B10005FD1E3 /* PackingSections.swift */; };
+		1C59641D296D4CFF005FD1E3 /* PackingItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C59641C296D4CFF005FD1E3 /* PackingItems.swift */; };
+		1C59641F296D537D005FD1E3 /* AddPackingItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C59641E296D537D005FD1E3 /* AddPackingItem.swift */; };
 		1CD84A95296AA907000D321E /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD84A94296AA907000D321E /* Home.swift */; };
 		1CD84A9B296AACDD000D321E /* Gilroy-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1CD84A9A296AACDD000D321E /* Gilroy-Medium.ttf */; };
 		1CD84A9D296AACFF000D321E /* Gilroy-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1CD84A9C296AACFF000D321E /* Gilroy-Regular.ttf */; };
@@ -32,6 +37,11 @@
 		1C59640E296C03AE005FD1E3 /* Tajawal-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Tajawal-Medium.ttf"; sourceTree = "<group>"; };
 		1C596410296C03BE005FD1E3 /* Tajawal-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Tajawal-Regular.ttf"; sourceTree = "<group>"; };
 		1C596412296C03C9005FD1E3 /* Tajawal-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Tajawal-Bold.ttf"; sourceTree = "<group>"; };
+		1C596414296C0768005FD1E3 /* PreTravelChecklist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreTravelChecklist.swift; sourceTree = "<group>"; };
+		1C596416296C21D2005FD1E3 /* TravelPacking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelPacking.swift; sourceTree = "<group>"; };
+		1C59641A296D4B10005FD1E3 /* PackingSections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PackingSections.swift; sourceTree = "<group>"; };
+		1C59641C296D4CFF005FD1E3 /* PackingItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PackingItems.swift; sourceTree = "<group>"; };
+		1C59641E296D537D005FD1E3 /* AddPackingItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPackingItem.swift; sourceTree = "<group>"; };
 		1CD84A94296AA907000D321E /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		1CD84A9A296AACDD000D321E /* Gilroy-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-Medium.ttf"; sourceTree = "<group>"; };
 		1CD84A9C296AACFF000D321E /* Gilroy-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-Regular.ttf"; sourceTree = "<group>"; };
@@ -64,6 +74,7 @@
 			children = (
 				1CD84A96296AAAC6000D321E /* Components */,
 				1CD84A94296AA907000D321E /* Home.swift */,
+				1C596414296C0768005FD1E3 /* PreTravelChecklist.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -71,6 +82,7 @@
 		1CD84A92296AA8B7000D321E /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				1C596416296C21D2005FD1E3 /* TravelPacking.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -85,6 +97,9 @@
 		1CD84A96296AAAC6000D321E /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				1C59641A296D4B10005FD1E3 /* PackingSections.swift */,
+				1C59641C296D4CFF005FD1E3 /* PackingItems.swift */,
+				1C59641E296D537D005FD1E3 /* AddPackingItem.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -227,9 +242,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C59641F296D537D005FD1E3 /* AddPackingItem.swift in Sources */,
+				1C59641D296D4CFF005FD1E3 /* PackingItems.swift in Sources */,
 				F56D8FE4296A94DD008EC31B /* ContentView.swift in Sources */,
 				F56D8FE2296A94DD008EC31B /* NanoApp.swift in Sources */,
+				1C596415296C0768005FD1E3 /* PreTravelChecklist.swift in Sources */,
+				1C596417296C21D2005FD1E3 /* TravelPacking.swift in Sources */,
 				1CD84A95296AA907000D321E /* Home.swift in Sources */,
+				1C59641B296D4B10005FD1E3 /* PackingSections.swift in Sources */,
 				F56D8FF0296AA59F008EC31B /* TEST.swift in Sources */,
 				F56D8FFC296C765A008EC31B /* SwiftUIView2.swift in Sources */,
 				F56D8FF6296B3894008EC31B /* search bar.swift in Sources */,
