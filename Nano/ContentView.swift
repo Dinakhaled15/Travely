@@ -25,11 +25,11 @@ struct ContentView: View {
                 
                 
                 Text("Adventure Awaits")
-                    .font(.custom("Gilory-Regular", size:36))
+                    .font(Font.custom(Locale.preferredLanguages[0] == "en" ? "Gilroy-Medium": "Tajawal-Medium", size: 21))
                     .foregroundColor(.white)
             
                 Text("Plan your Trip and Enjoy a Stress-free Travel full of Adventures and Memories. ")
-                
+                    .font(Font.custom(Locale.preferredLanguages[0] == "en" ? "Gilroy-Medium": "Tajawal-Medium", size: 21))
                     .foregroundColor(.white)
                     .padding()
                     .multilineTextAlignment(.center)
@@ -37,7 +37,7 @@ struct ContentView: View {
                 
                 Button("Get Started"){
                 }
-                
+                .font(Font.custom(Locale.preferredLanguages[0] == "en" ? "Gilroy-Medium": "Tajawal-Medium", size: 21))
                 .padding(5)
                 
                 .cornerRadius(10)

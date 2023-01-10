@@ -23,6 +23,7 @@
 		F56D8FF0296AA59F008EC31B /* TEST.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56D8FEF296AA59F008EC31B /* TEST.swift */; };
 		F56D8FF4296B3283008EC31B /* emergency page.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56D8FF3296B3283008EC31B /* emergency page.swift */; };
 		F56D8FF6296B3894008EC31B /* search bar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56D8FF5296B3894008EC31B /* search bar.swift */; };
+		F56D8FFC296C765A008EC31B /* SwiftUIView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56D8FFB296C765A008EC31B /* SwiftUIView2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		F56D8FEF296AA59F008EC31B /* TEST.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TEST.swift; sourceTree = "<group>"; };
 		F56D8FF3296B3283008EC31B /* emergency page.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "emergency page.swift"; sourceTree = "<group>"; };
 		F56D8FF5296B3894008EC31B /* search bar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "search bar.swift"; sourceTree = "<group>"; };
+		F56D8FFB296C765A008EC31B /* SwiftUIView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 		F56D8FD5296A94DD008EC31B = {
 			isa = PBXGroup;
 			children = (
+				F56D8FFB296C765A008EC31B /* SwiftUIView2.swift */,
 				1C596408296BF4B2005FD1E3 /* Localizable.strings */,
 				1C59640D296BF504005FD1E3 /* Localizable.strings */,
 				F56D8FE0296A94DD008EC31B /* Nano */,
@@ -228,6 +231,7 @@
 				F56D8FE2296A94DD008EC31B /* NanoApp.swift in Sources */,
 				1CD84A95296AA907000D321E /* Home.swift in Sources */,
 				F56D8FF0296AA59F008EC31B /* TEST.swift in Sources */,
+				F56D8FFC296C765A008EC31B /* SwiftUIView2.swift in Sources */,
 				F56D8FF6296B3894008EC31B /* search bar.swift in Sources */,
 				F56D8FF4296B3283008EC31B /* emergency page.swift in Sources */,
 			);

@@ -19,17 +19,20 @@ struct emergency_page: View {
     @State private var addBorder: Bool = false
     @State private var searchText = ""
     
-    @State var data = [
-        EmergencyInfo(number: "997", type: "Ambulance", description: "For health issues"),
-        EmergencyInfo(number: "999", type: "Police", description: "For security issues"),
-        EmergencyInfo(number: "998", type: "Civil Defense", description: "For fires issues"),
-        EmergencyInfo(number: "993", type: "Traffic Accidents", description: "For car accidents"),
-        EmergencyInfo(number: "996", type: "Roads Security", description: "For road issues"),
-        EmergencyInfo(number: "966", type: "Natural Disastersy", description: "For rain.. etc disasters"),
-        EmergencyInfo(number: "937", type: "Ministry of Health", description: "For health issues"),
-        EmergencyInfo(number: "911", type: "Unified Emergency Number", description: "For all emergency cases"),
-        EmergencyInfo(number: "990", type: "Kingdom Emergency", description: "No SIM card needed"),
-               ]
+    @State var data =
+        [EmergencyInfo(number:  NSLocalizedString("997", comment: ""), type: NSLocalizedString("Ambulance", comment: ""), description: NSLocalizedString("For health issues", comment: "")),
+        EmergencyInfo(number: NSLocalizedString("999", comment: ""), type:NSLocalizedString("Police", comment: ""), description: NSLocalizedString("For security issues", comment: "")),
+         EmergencyInfo(number:NSLocalizedString("998", comment: ""),  type:NSLocalizedString( "Civil Defense", comment: ""),  description: NSLocalizedString("For fires issues", comment: "")),
+        EmergencyInfo(number:NSLocalizedString("993", comment: ""),  type: NSLocalizedString("Traffic Accidents", comment: ""),  description: NSLocalizedString("For car accidents", comment: "")),
+        EmergencyInfo(number:NSLocalizedString("996",comment: ""),  type: NSLocalizedString( "Roads Security",comment: ""), description:NSLocalizedString("For road issues", comment: "")),
+        EmergencyInfo(number:NSLocalizedString( "966", comment: ""), type: NSLocalizedString( "Natural Disasters", comment: ""), description:NSLocalizedString("For rain.. and disasters", comment: "")),
+        EmergencyInfo(number: NSLocalizedString("937", comment: ""),  type: NSLocalizedString("Ministry of Health", comment: ""),  description: NSLocalizedString("For health issues", comment: "")),
+       EmergencyInfo(number: NSLocalizedString("911", comment: ""),  type: NSLocalizedString("Unified Emergency Number", comment: ""),  description: NSLocalizedString("For all emergency cases", comment: "")),
+        EmergencyInfo(number:NSLocalizedString("990",comment: ""),  type: NSLocalizedString( "Kingdom Emergency", comment: ""), description:  NSLocalizedString("No SIM card needed", comment: "")),
+           ]
+                      
+                      
+               
         
         
    
@@ -38,13 +41,23 @@ struct emergency_page: View {
        
             
             VStack {
+                
                 Text("Emergency Numbers")
                 
-                    .padding(.trailing,80)
+                    .offset(y: 7)
+                    .padding(.trailing,75)
                     .foregroundColor(.white)
-                    .font(.largeTitle)
-                    //.padding(.bottom)
+                    .font(Font.custom(Locale.preferredLanguages[0] == "en" ? "Gilroy-Medium": "Tajawal-Medium", size: 30))
+                .padding(.bottom,-5)
                 
+                VStack{
+                    NavigationStack {
+                      
+                    }
+                    .searchable(text: $searchText)
+                    .frame(width:400, height: 100, alignment: .topLeading)
+
+                }
                     List {
                         
                     Section {
@@ -52,7 +65,7 @@ struct emergency_page: View {
                             HStack {
                                 Text(dataItem.number)
                                     .foregroundColor(.white)
-                                     
+                                    .font(Font.custom(Locale.preferredLanguages[0] == "en" ? "Gilroy-Medium": "Tajawal-Medium", size: 22))
                                 
                                     .padding()
                                 
@@ -72,7 +85,7 @@ struct emergency_page: View {
                                         .foregroundColor(.gray)
                                     Text(dataItem.description)
                                         .foregroundColor(.gray)
-                                    
+                                        .font(Font.custom(Locale.preferredLanguages[0] == "en" ? "Gilroy-Medium": "Tajawal-Medium", size: 15))
                                 }
                                 
                                 Spacer()
@@ -116,6 +129,10 @@ struct emergency_page: View {
     
 
                         }
+
+
+
+
 
 
 

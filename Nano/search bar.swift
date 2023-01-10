@@ -10,9 +10,7 @@
 import SwiftUI
 
 struct search_bar_tool: View {
-    init () {
-        UITableView.appearance () .backgroundColor = .yellow
-    }
+   
     @State private var searchText = ""
     var body: some View {
       
