@@ -44,8 +44,8 @@ struct emergency_page: View {
                 
                 Text("Emergency Numbers")
                 
-                    .offset(y: 7)
-                    .padding(.trailing,75)
+                    .offset(y: 4)
+                    .padding(.bottom,5)
                     .foregroundColor(.white)
                     .font(Font.custom(Locale.preferredLanguages[0] == "en" ? "Gilroy-Medium": "Tajawal-Medium", size: 30))
                 .padding(.bottom,-5)

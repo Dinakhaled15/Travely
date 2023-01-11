@@ -11,8 +11,7 @@ import SwiftUI
 struct NanoApp: App {
     var body: some Scene {
         WindowGroup {
-            emergency_page()
-                .preferredColorScheme (.dark)
+            Home()
         }
     }
 }
