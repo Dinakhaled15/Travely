@@ -23,6 +23,7 @@ struct PackingSections: View {
             
             if isExpanded {
                 Group {
+                    
                     ForEach(section.packingItems) { item in
                         PackingItems(item: item)
                     }

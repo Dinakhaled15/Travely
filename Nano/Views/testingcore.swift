@@ -15,7 +15,7 @@ struct testingcore: View {
     var body: some View {
         VStack {
             List(checklist) { item in
-                Text(item.name ?? "Unknown")
+                Text(item.item ?? "Unknown")
             }
             
             Button("Add") {
@@ -27,7 +27,7 @@ struct testingcore: View {
 
                 let list = TravelChecklist(context: moc)
                 list.id = UUID()
-                list.name = "\(chosenFirstName) \(chosenLastName)"
+                list.item = "\(chosenFirstName) \(chosenLastName)"
                 try? moc.save()
                 // more code to come
             }

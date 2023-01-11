@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct PreTravelChecklist: View {
+    @FetchRequest(sortDescriptors: []) var sections: FetchedResults<Sections>
+    
+    @Environment(\.managedObjectContext) var moc
     init(){
         UITableView.appearance().backgroundColor = UIColor(Color.clear)
     }
