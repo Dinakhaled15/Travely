@@ -1,22 +1,13 @@
 //
-//  emergency page.swift
+//  ii.swift
 //  Nano
 //
-//  Created by Dina Alhajj Ibrahim on 08/01/2023.
+//  Created by Dina Alhajj Ibrahim on 11/01/2023.
 //
 
 import SwiftUI
-struct EmergencyInfo: Identifiable {
-    var id = UUID()
-    
-    let number : String;
-    let type : String;
-    let description : String
-}
 
-struct emergency_page: View {
-    
-    @State private var addBorder: Bool = false
+struct ii: View {
     @State private var searchText = ""
     
     @State var data =
@@ -30,32 +21,19 @@ struct emergency_page: View {
        EmergencyInfo(number: NSLocalizedString("911", comment: ""),  type: NSLocalizedString("Unified Emergency Number", comment: ""),  description: NSLocalizedString("For all emergency cases", comment: "")),
         EmergencyInfo(number:NSLocalizedString("990",comment: ""),  type: NSLocalizedString( "Kingdom Emergency", comment: ""), description:  NSLocalizedString("No SIM card needed", comment: "")),
            ]
-                      
-                      
-               
-        
-        
-   
-    
+             
     var body: some View {
-       
-            
-            VStack {
-                
-                Text("Emergency Numbers")
-                
-                    //.offset(y: 7)
-                    .padding(.trailing,75)
-                    .foregroundColor(.white)
-                    .font(Font.custom(Locale.preferredLanguages[0] == "en" ? "Gilroy-Medium": "Tajawal-Medium", size: 30))
-                .padding(.bottom,2)
-               search_bar_tool()
-                    .frame(height:60)
-            
-                
-                    List() {
+        
+        NavigationView{
+                ScrollView{
+                    HStack(alignment: .top){
+                        Text( "\(searchText)")
                         
-                    Section {
+                            .searchable(text: $searchText)
+                        //                    Label("Profile", systemImage:"person")
+                    }
+                    .padding(.top, 1.0)
+                        
                         ForEach(data) { dataItem in
                             HStack {
                                 Text(dataItem.number)
@@ -75,7 +53,7 @@ struct emergency_page: View {
                                 
                                 VStack(alignment: .leading)
                                 {
-                            Text(dataItem.type)
+                                    Text(dataItem.type)
                                         .font(.title)
                                         .foregroundColor(.gray)
                                     Text(dataItem.description)
@@ -95,44 +73,21 @@ struct emergency_page: View {
                             .background(.black)
                             
                         }
-                        
-                    }
                     
-                    }
 
-                    .listStyle(.plain)
-                
-                
-                
-                
-                
-                
-                
-            }
-            //.navigationTitle( "Explore")
-            .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top).background(.black)
-            .scrollContentBackground(.hidden)
-           // .searchable(text: $searchText, placement: .navigationBarDrawer(displayMode: .always))
-      
-        
-            
-            
-        
-        
-    }
-    struct emergency_page_Previews: PreviewProvider {
-        static var previews: some View {
-            emergency_page()
-                .preferredColorScheme (.dark)
+                   // emergency_page()
+                    //            .navigationBarItems (leading: removeBtn, trailing:  View)
+                    .navigationTitle("Emergency Numbers")
+                    .font(Font.custom(Locale.preferredLanguages[0] == "en" ? "Gilroy-Medium": "Tajawal-Medium", size: 30))
+                    
+            }                           
+
         }
     }
-    
-
-                        }
-
-
-
-
-
-
-
+}
+    struct ii_Previews: PreviewProvider {
+        static var previews: some View {
+            ii()
+            .preferredColorScheme (.dark)
+        }
+    }

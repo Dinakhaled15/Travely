@@ -25,6 +25,7 @@
 		1CD84A9B296AACDD000D321E /* Gilroy-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1CD84A9A296AACDD000D321E /* Gilroy-Medium.ttf */; };
 		1CD84A9D296AACFF000D321E /* Gilroy-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1CD84A9C296AACFF000D321E /* Gilroy-Regular.ttf */; };
 		1CD84A9F296AAD0A000D321E /* Gilroy-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1CD84A9E296AAD0A000D321E /* Gilroy-Bold.ttf */; };
+		F50D5FCD296E9E0E00729960 /* ii.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50D5FCC296E9E0E00729960 /* ii.swift */; };
 		F56D8FE2296A94DD008EC31B /* NanoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56D8FE1296A94DD008EC31B /* NanoApp.swift */; };
 		F56D8FE4296A94DD008EC31B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56D8FE3296A94DD008EC31B /* ContentView.swift */; };
 		F56D8FE6296A94DE008EC31B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F56D8FE5296A94DE008EC31B /* Assets.xcassets */; };
@@ -55,6 +56,7 @@
 		1CD84A9C296AACFF000D321E /* Gilroy-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-Regular.ttf"; sourceTree = "<group>"; };
 		1CD84A9E296AAD0A000D321E /* Gilroy-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-Bold.ttf"; sourceTree = "<group>"; };
 		1CD84AA0296AADA5000D321E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		F50D5FCC296E9E0E00729960 /* ii.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ii.swift; sourceTree = "<group>"; };
 		F56D8FDE296A94DD008EC31B /* Nano.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nano.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F56D8FE1296A94DD008EC31B /* NanoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NanoApp.swift; sourceTree = "<group>"; };
 		F56D8FE3296A94DD008EC31B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -159,6 +161,7 @@
 				F56D8FE1296A94DD008EC31B /* NanoApp.swift */,
 				F56D8FE3296A94DD008EC31B /* ContentView.swift */,
 				F56D8FF3296B3283008EC31B /* emergency page.swift */,
+				F50D5FCC296E9E0E00729960 /* ii.swift */,
 				F56D8FF5296B3894008EC31B /* search bar.swift */,
 				F56D8FE5296A94DE008EC31B /* Assets.xcassets */,
 				F56D8FE7296A94DE008EC31B /* Preview Content */,
@@ -263,6 +266,7 @@
 				1CD84A95296AA907000D321E /* Home.swift in Sources */,
 				1C596424296D59C9005FD1E3 /* DataController.swift in Sources */,
 				1C4A9908296D6C7300563BCE /* SplashScreen.swift in Sources */,
+				F50D5FCD296E9E0E00729960 /* ii.swift in Sources */,
 				1C59641B296D4B10005FD1E3 /* PackingSections.swift in Sources */,
 				F56D8FF0296AA59F008EC31B /* TEST.swift in Sources */,
 				F56D8FFC296C765A008EC31B /* SwiftUIView2.swift in Sources */,

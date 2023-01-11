@@ -20,7 +20,7 @@ struct search_bar_tool: View {
               
             }
             .searchable(text: $searchText)
-            
+            //.frame(height:60)
 
         }
     }

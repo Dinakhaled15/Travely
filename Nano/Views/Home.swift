@@ -64,7 +64,7 @@ struct Home: View {
                         Text("places").frame(maxWidth: 165.0,maxHeight: 300,
                                              alignment: .center).font(Font.custom(Locale.preferredLanguages[0] == "en" ? "Gilroy-Medium": "Tajawal-Medium", size: 21)).foregroundColor(Color("subtitle"))
                             .background(Color("sectionsBackground"))  .cornerRadius(10) .padding(EdgeInsets(top: 8, leading: 0, bottom: 4, trailing: 0))
-                        NavigationLink(destination: emergency_page()){
+                        NavigationLink(destination: ii()){
                         VStack{
                             Spacer()
                             Text("emergency_numbers").multilineTextAlignment(.center).font(Font.custom(Locale.preferredLanguages[0] == "en" ? "Gilroy-Medium": "Tajawal-Medium", size: 21)).foregroundColor(.white)
