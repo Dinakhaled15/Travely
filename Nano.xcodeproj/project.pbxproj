@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C4A9908296D6C7300563BCE /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C4A9907296D6C7300563BCE /* SplashScreen.swift */; };
 		1C596406296BF4B2005FD1E3 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1C596408296BF4B2005FD1E3 /* Localizable.strings */; };
 		1C59640B296BF504005FD1E3 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1C59640D296BF504005FD1E3 /* Localizable.strings */; };
 		1C59640F296C03AE005FD1E3 /* Tajawal-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1C59640E296C03AE005FD1E3 /* Tajawal-Medium.ttf */; };
@@ -17,6 +18,9 @@
 		1C59641B296D4B10005FD1E3 /* PackingSections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C59641A296D4B10005FD1E3 /* PackingSections.swift */; };
 		1C59641D296D4CFF005FD1E3 /* PackingItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C59641C296D4CFF005FD1E3 /* PackingItems.swift */; };
 		1C59641F296D537D005FD1E3 /* AddPackingItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C59641E296D537D005FD1E3 /* AddPackingItem.swift */; };
+		1C596422296D58D7005FD1E3 /* PachingChecklist.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1C596420296D58D7005FD1E3 /* PachingChecklist.xcdatamodeld */; };
+		1C596424296D59C9005FD1E3 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C596423296D59C9005FD1E3 /* DataController.swift */; };
+		1C596426296D5DA1005FD1E3 /* testingcore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C596425296D5DA1005FD1E3 /* testingcore.swift */; };
 		1CD84A95296AA907000D321E /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD84A94296AA907000D321E /* Home.swift */; };
 		1CD84A9B296AACDD000D321E /* Gilroy-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1CD84A9A296AACDD000D321E /* Gilroy-Medium.ttf */; };
 		1CD84A9D296AACFF000D321E /* Gilroy-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1CD84A9C296AACFF000D321E /* Gilroy-Regular.ttf */; };
@@ -32,6 +36,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1C4A9907296D6C7300563BCE /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
 		1C596407296BF4B2005FD1E3 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
 		1C59640C296BF504005FD1E3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		1C59640E296C03AE005FD1E3 /* Tajawal-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Tajawal-Medium.ttf"; sourceTree = "<group>"; };
@@ -42,6 +47,9 @@
 		1C59641A296D4B10005FD1E3 /* PackingSections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PackingSections.swift; sourceTree = "<group>"; };
 		1C59641C296D4CFF005FD1E3 /* PackingItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PackingItems.swift; sourceTree = "<group>"; };
 		1C59641E296D537D005FD1E3 /* AddPackingItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPackingItem.swift; sourceTree = "<group>"; };
+		1C596421296D58D7005FD1E3 /* PachingChecklist.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PachingChecklist.xcdatamodel; sourceTree = "<group>"; };
+		1C596423296D59C9005FD1E3 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		1C596425296D5DA1005FD1E3 /* testingcore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testingcore.swift; sourceTree = "<group>"; };
 		1CD84A94296AA907000D321E /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		1CD84A9A296AACDD000D321E /* Gilroy-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-Medium.ttf"; sourceTree = "<group>"; };
 		1CD84A9C296AACFF000D321E /* Gilroy-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-Regular.ttf"; sourceTree = "<group>"; };
@@ -75,6 +83,8 @@
 				1CD84A96296AAAC6000D321E /* Components */,
 				1CD84A94296AA907000D321E /* Home.swift */,
 				1C596414296C0768005FD1E3 /* PreTravelChecklist.swift */,
+				1C596425296D5DA1005FD1E3 /* testingcore.swift */,
+				1C4A9907296D6C7300563BCE /* SplashScreen.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -83,6 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				1C596416296C21D2005FD1E3 /* TravelPacking.swift */,
+				1C596420296D58D7005FD1E3 /* PachingChecklist.xcdatamodeld */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -90,6 +101,7 @@
 		1CD84A93296AA8C2000D321E /* ViewsModel */ = {
 			isa = PBXGroup;
 			children = (
+				1C596423296D59C9005FD1E3 /* DataController.swift */,
 			);
 			path = ViewsModel;
 			sourceTree = "<group>";
@@ -249,10 +261,14 @@
 				1C596415296C0768005FD1E3 /* PreTravelChecklist.swift in Sources */,
 				1C596417296C21D2005FD1E3 /* TravelPacking.swift in Sources */,
 				1CD84A95296AA907000D321E /* Home.swift in Sources */,
+				1C596424296D59C9005FD1E3 /* DataController.swift in Sources */,
+				1C4A9908296D6C7300563BCE /* SplashScreen.swift in Sources */,
 				1C59641B296D4B10005FD1E3 /* PackingSections.swift in Sources */,
 				F56D8FF0296AA59F008EC31B /* TEST.swift in Sources */,
 				F56D8FFC296C765A008EC31B /* SwiftUIView2.swift in Sources */,
+				1C596422296D58D7005FD1E3 /* PachingChecklist.xcdatamodeld in Sources */,
 				F56D8FF6296B3894008EC31B /* search bar.swift in Sources */,
+				1C596426296D5DA1005FD1E3 /* testingcore.swift in Sources */,
 				F56D8FF4296B3283008EC31B /* emergency page.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -475,6 +491,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		1C596420296D58D7005FD1E3 /* PachingChecklist.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				1C596421296D58D7005FD1E3 /* PachingChecklist.xcdatamodel */,
+			);
+			currentVersion = 1C596421296D58D7005FD1E3 /* PachingChecklist.xcdatamodel */;
+			path = PachingChecklist.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = F56D8FD6296A94DD008EC31B /* Project object */;
 }
