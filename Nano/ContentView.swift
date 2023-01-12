@@ -9,8 +9,10 @@ import SwiftUI
 
 struct ContentView: View {
     
+    @Environment(\.managedObjectContext) var moc
+    
     var body: some View {
-        NavigationView{
+   
             ZStack {
                 Color.black
                     .edgesIgnoringSafeArea(.all)
@@ -42,7 +44,33 @@ struct ContentView: View {
                         .cornerRadius(10)
                         .opacity(0.8)
                         .foregroundColor(Color("ColorD"))
-                    }
+                    }.simultaneousGesture(TapGesture().onEnded{
+                        if(UserDefaults.standard.bool(forKey: "IsScene") == false){
+                            @State  var data = [PackingItemsModel(title: "Charger", section: "Electronics", isChecked: false),PackingItemsModel(title: "Laptop", section: "Electronics", isChecked: false), PackingItemsModel(title: "Passport", section: "Documents", isChecked: false), PackingItemsModel(title: "Abaya", section: "Clothes", isChecked: false),PackingItemsModel(title: "Underwear", section: "Clothes", isChecked: false), PackingItemsModel(title: "Deodorant", section: "Essentials", isChecked: false),PackingItemsModel(title: "Hair", section: "Essentials", isChecked: false),PackingItemsModel(title: "Brush", section: "Essentials", isChecked: false),PackingItemsModel(title: "Emergency Kit", section: "Essentials", isChecked: false)
+                            
+                            ]
+                            
+                    
+
+                          
+                          data.forEach { dataItem in
+                              let list = TravelChecklist(context: moc)
+                                list.id = UUID()
+                                list.item = dataItem.title
+                                list.section = dataItem.section
+                                list.checked = dataItem.isChecked
+                              
+                                try? moc.save()
+                      
+                            }
+                            
+                          
+                          
+                            UserDefaults.standard.setValue(true, forKey: "IsScene")
+                        }
+                      
+                       
+                    })
                    
                     
                 }
@@ -50,7 +78,7 @@ struct ContentView: View {
                 
                 .textFieldStyle(.roundedBorder)
                 .frame(width:400, height: 550, alignment: .topLeading)
-            }}
+            }.navigationBarBackButtonHidden(true)
     }
     
     

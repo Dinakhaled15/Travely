@@ -8,17 +8,13 @@
 import SwiftUI
 
 struct PreTravelChecklist: View {
-    @FetchRequest(sortDescriptors: []) var sections: FetchedResults<Sections>
-    
-    @Environment(\.managedObjectContext) var moc
+  
     init(){
         UITableView.appearance().backgroundColor = UIColor(Color.clear)
     }
     
-    @State private var data = [TravelPacking(sectionName: "Electronics", packingItems: [PackingItemsModel(title: "Charger"),PackingItemsModel(title: "Laptop")]),
-                               TravelPacking(sectionName: "Documents", packingItems: [PackingItemsModel(title: "Passport")]),
-                               TravelPacking(sectionName: "Clothes", packingItems: [PackingItemsModel(title: "Abaya"),PackingItemsModel(title: "Underwear")]),
-                               TravelPacking(sectionName: "Essentials", packingItems: [PackingItemsModel(title: "Deodorant"),PackingItemsModel(title: "Hair"),PackingItemsModel(title: "Brush"),PackingItemsModel(title: "Emergency Kit")])]
+    @State private var data = ["Electronics", "Documents","Clothes","Essentials"]
+  
     
     @State private var selections = Set<String>()
     var body: some View {
@@ -28,7 +24,7 @@ struct PreTravelChecklist: View {
             
             NavigationView {
                 ScrollView {
-                    ForEach(data) { dataItem in
+                    ForEach(data, id: \.self) { dataItem in
                         PackingSections(section: dataItem)
                             .animation(.default)
                     }

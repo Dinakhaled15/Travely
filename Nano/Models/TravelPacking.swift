@@ -17,4 +17,6 @@ struct TravelPacking: Identifiable {
 struct PackingItemsModel: Identifiable {
     let id: String = UUID().uuidString
     let title: String
+    let section : String
+    let isChecked : Bool
 }

@@ -83,6 +83,9 @@ struct Home: View {
                 
             }.frame(maxWidth: .infinity, maxHeight: .infinity,
                     alignment: .topLeading).padding(16).background(.black).navigationBarBackButtonHidden(true)
+            
+        
+
       
         
     

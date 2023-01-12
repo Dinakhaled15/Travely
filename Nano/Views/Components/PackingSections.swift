@@ -10,8 +10,22 @@ import SwiftUI
 struct PackingSections: View {
     @State private var isExpanded: Bool = false
     
-    let section: TravelPacking
+    let section: String
+    @FetchRequest(sortDescriptors: []) var checklist: FetchedResults<TravelChecklist>
     
+    @Environment(\.managedObjectContext) var moc
+    private func deleteTask(at offsets: IndexSet) {
+         offsets.forEach { index in
+             let task = checklist[index]
+             moc.delete(task)
+             
+             do {
+                 try moc.save()
+             } catch {
+                 print(error.localizedDescription)
+             }
+         }
+     }
     var body: some View {
         content
           
@@ -24,10 +38,10 @@ struct PackingSections: View {
             if isExpanded {
                 Group {
                     
-                    ForEach(section.packingItems) { item in
-                        PackingItems(item: item)
+                    ForEach(checklist.filter {$0.section==self.section}) { item in
+                        PackingItems(item: PackingItemsModel(title: item.item ?? "", section: item.section ?? "", isChecked: item.checked) , item2: item)
                     }
-                    AddPackingItem()
+                    AddPackingItem(section: section)
                 }
                 .padding(.leading)
             }
@@ -38,7 +52,7 @@ struct PackingSections: View {
     private var header: some View {
    
      
-        Text(section.sectionName).font(Font.custom(Locale.preferredLanguages[0] == "en" ? "Gilroy-Medium": "Tajawal-Medium", size: 16)).foregroundColor(.white)
+        Text(section).font(Font.custom(Locale.preferredLanguages[0] == "en" ? "Gilroy-Medium": "Tajawal-Medium", size: 16)).foregroundColor(.white)
             .padding(EdgeInsets(top: 0, leading: 16, bottom: 0, trailing: 16))
        
         .onTapGesture { isExpanded.toggle() }
@@ -48,7 +62,7 @@ struct PackingSections: View {
 
 struct PackingSections_Previews: PreviewProvider {
     static var previews: some View {
-        PackingSections(section: TravelPacking(sectionName: "Electronics", packingItems: [PackingItemsModel(title: "Charger"),PackingItemsModel(title: "Laptop")]))
+        PackingSections(section: "Electronics")
     }
 }
 
