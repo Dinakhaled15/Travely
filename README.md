@@ -1,6 +1,8 @@
 ## TravelyApp
 
-<img width="707" alt="Screenshot 2023-01-12 at 12 19 24 PM" src="https://user-images.githubusercontent.com/85529608/212028027-08744d77-9a93-4335-9736-9a19584fd8c4.png">
+![Bitmap](https://user-images.githubusercontent.com/85529608/212031104-9015fdac-2dc6-441c-a798-01117e9f9d22.png)
+
+
 
 ## Big Idea
 Inclusion
@@ -22,6 +24,6 @@ A Planner for Travelers who Wish to Orgnize their Trip so that they can have str
 ## DEMO
 
 ## Challenge Summary 
-
+<img width="707" alt="Screenshot 2023-01-12 at 12 19 24 PM" src="https://user-images.githubusercontent.com/85529608/212028027-08744d77-9a93-4335-9736-9a19584fd8c4.png">
 
 
