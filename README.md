@@ -1,4 +1,4 @@
 # TravelyApp
-Gone camping! :joy: Be back soon.
+Gone camping! :sad: Be back soon.
 
 That is so funny! :joy:
