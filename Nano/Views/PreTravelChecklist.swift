@@ -18,6 +18,13 @@ struct PreTravelChecklist: View {
   
     
 
+    @State private var data = [TravelPacking(sectionName: NSLocalizedString("Electronics", comment: ""),  packingItems: [PackingItemsModel(title: NSLocalizedString("Charger", comment: "")),PackingItemsModel(title:  NSLocalizedString("Laptop", comment: "")),]),
+                               
+                               TravelPacking(sectionName: NSLocalizedString("Documents", comment: ""),  packingItems: [PackingItemsModel(title:  NSLocalizedString("Passport", comment: "")),]),
+                               
+                               TravelPacking(sectionName:  NSLocalizedString("Clothes", comment: ""), packingItems: [PackingItemsModel(title: NSLocalizedString("Abaya", comment: "")) ,PackingItemsModel(title:  NSLocalizedString( "Underwear", comment: "")),]),
+                               TravelPacking(sectionName: NSLocalizedString("Essentials", comment: ""),  packingItems: [PackingItemsModel(title: NSLocalizedString("Deodorant", comment: "")), PackingItemsModel(title: NSLocalizedString("Hair Brush", comment: "")),PackingItemsModel(title:   NSLocalizedString("Emergency Kit", comment: "")),]),
+    ]
     @State private var selections = Set<String>()
     var body: some View {
         VStack{
