@@ -5,23 +5,23 @@
 ## Big Idea
 Inclusion
 
-#Challenge Statement
+## Challenge Statement
 Make an inclusive solution that help adults in their travel
 
-#Challenge Summary 
+## Challenge Summary 
 Travelers wish to have travel planner for stress free and pleasing experience
 
-#Solution Concept
+## Solution Concept
 A Planner for Travelers who Wish to Orgnize their Trip so that they can have stress free and plaeasing travel.
 
-#Technologies and Tools
-1- SwiftUI
-2- Core Data
-3- Accessibility
+## Technologies and Tools
+✔️ SwiftUI
+✔️ Core Data
+✔️ Accessibility
 
-#DEMO
+## DEMO
 
-#Challenge Summary 
+## Challenge Summary 
 
 
 
