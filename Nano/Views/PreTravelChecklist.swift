@@ -15,21 +15,28 @@ struct PreTravelChecklist: View {
         UITableView.appearance().backgroundColor = UIColor(Color.clear)
     }
     
-    @State private var data = [TravelPacking(sectionName: "Electronics", packingItems: [PackingItemsModel(title: "Charger"),PackingItemsModel(title: "Laptop")]),
-                               TravelPacking(sectionName: "Documents", packingItems: [PackingItemsModel(title: "Passport")]),
-                               TravelPacking(sectionName: "Clothes", packingItems: [PackingItemsModel(title: "Abaya"),PackingItemsModel(title: "Underwear")]),
-                               TravelPacking(sectionName: "Essentials", packingItems: [PackingItemsModel(title: "Deodorant"),PackingItemsModel(title: "Hair"),PackingItemsModel(title: "Brush"),PackingItemsModel(title: "Emergency Kit")])]
-    
+    @State private var data = [TravelPacking(sectionName: NSLocalizedString("Electronics", comment: ""),  packingItems: [PackingItemsModel(title: NSLocalizedString("Charger", comment: "")),PackingItemsModel(title:  NSLocalizedString("Laptop", comment: "")),]),
+                               
+                               TravelPacking(sectionName: NSLocalizedString("Documents", comment: ""),  packingItems: [PackingItemsModel(title:  NSLocalizedString("Passport", comment: "")),]),
+                               
+                               TravelPacking(sectionName:  NSLocalizedString("Clothes", comment: ""), packingItems: [PackingItemsModel(title: NSLocalizedString("Abaya", comment: "")) ,PackingItemsModel(title:  NSLocalizedString( "Underwear", comment: "")),]),
+                               TravelPacking(sectionName: NSLocalizedString("Essentials", comment: ""),  packingItems: [PackingItemsModel(title: NSLocalizedString("Deodorant", comment: "")), PackingItemsModel(title: NSLocalizedString("Hair Brush", comment: "")),PackingItemsModel(title:   NSLocalizedString("Emergency Kit", comment: "")),]),
+    ]
     @State private var selections = Set<String>()
     var body: some View {
         VStack{
-            Text("pre_travel_checklist").frame(maxWidth: .infinity,
-                                               alignment: .leading).font(Font.custom(Locale.preferredLanguages[0] == "en" ? "Gilroy-Medium": "Tajawal-Medium", size: 21)).foregroundColor(.white).padding(EdgeInsets(top: 32, leading: 24, bottom: 16, trailing: 24))
+            Text("pre_travel_checklist")
+                .accessibilityLabel(Text("pre_travel_checklist"))
+                .frame(maxWidth: .infinity,
+                                               alignment:
+                    .leading)
+            .font(Font.custom(Locale.preferredLanguages[0] == "en" ? "Gilroy-Medium": "Tajawal-Medium", size: 21)).foregroundColor(.white).padding(EdgeInsets(top: 32, leading: 24, bottom: 16, trailing: 24))
             
             NavigationView {
                 ScrollView {
                     ForEach(data) { dataItem in
                         PackingSections(section: dataItem)
+                        
                             .animation(.default)
                     }
                  

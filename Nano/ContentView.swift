@@ -25,10 +25,12 @@ struct ContentView: View {
                     
                     
                     Text("Adventure Awaits")
+                        .accessibilityLabel(Text("Adventure Awaits"))
                         .font(Font.custom(Locale.preferredLanguages[0] == "en" ? "Gilroy-Medium": "Tajawal-Medium", size: 21))
                         .foregroundColor(.white)
                     
                     Text("Plan your Trip and Enjoy a Stress-free Travel full of Adventures and Memories. ")
+                        .accessibilityLabel(Text("Plan your Trip and Enjoy a Stress-free Travel full of Adventures and Memories. "))
                         .font(Font.custom(Locale.preferredLanguages[0] == "en" ? "Gilroy-Medium": "Tajawal-Medium", size: 21))
                         .foregroundColor(.white)
                         .padding()
@@ -36,6 +38,7 @@ struct ContentView: View {
                     
                     NavigationLink(destination: Home()){
                         Text("Get Started")
+                            .accessibilityLabel(Text("Get Started"))
                         .font(Font.custom(Locale.preferredLanguages[0] == "en" ? "Gilroy-Medium": "Tajawal-Medium", size: 21))
                         .padding(5)
                         
