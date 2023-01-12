@@ -1,5 +1,6 @@
 # TravelyApp
 
-[Uploading Screenshot 2023-01-12 at 12.19.24 PM.png…]()
+<img width="1088" alt="“ALLIES”_ToTheClouds_ADATWQ_2022_2023”" src="https://user-images.githubusercontent.com/85529608/212027887-34995158-793b-41dc-b31d-5ab6ade7cce1.png">
+
 
 
