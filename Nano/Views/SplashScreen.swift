@@ -41,7 +41,7 @@ struct SplashScreen: View {
                 }
                 
             }
-        }
+        }.navigationBarHidden(true).accentColor(Color("primary"))
        
             
     }

@@ -28,12 +28,12 @@ struct ContentView: View {
                     
                     Text("Adventure Awaits")
                         .accessibilityLabel(Text("Adventure Awaits"))
-                        .font(Font.custom(Locale.preferredLanguages[0] == "en" ? "Gilroy-Medium": "Tajawal-Medium", size: 21))
-                        .foregroundColor(.white)
+                        .font(Font.custom(Locale.preferredLanguages[0] == "en" ? "Gilroy-Medium": "Tajawal-Medium", size: 16))
+                        .foregroundColor(Color("subtitle"))
                     
                     Text("Plan your Trip and Enjoy a Stress-free Travel full of Adventures and Memories. ")
                         .accessibilityLabel(Text("Plan your Trip and Enjoy a Stress-free Travel full of Adventures and Memories. "))
-                        .font(Font.custom(Locale.preferredLanguages[0] == "en" ? "Gilroy-Medium": "Tajawal-Medium", size: 21))
+                        .font(Font.custom(Locale.preferredLanguages[0] == "en" ? "Gilroy-Medium": "Tajawal-Medium", size: 16))
                         .foregroundColor(.white)
                         .padding()
                         .multilineTextAlignment(.center)

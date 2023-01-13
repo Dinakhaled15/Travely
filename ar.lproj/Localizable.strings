@@ -8,7 +8,7 @@
 
 //HOME
 "plan" = "خطط";
-"your_travel" = "رحلتك القادمة";
+"your_travel" = "خطط لرحلتك القادمة";
 "trip_count_down" = "عد تنازلي لرحلتك القادمة";
 "schedule_your_next_trip" = "اختر موعد الرحلة";
 "hello_traveler" = "مرحبًا آيها المسافر!";
@@ -18,7 +18,7 @@
 "Emergency Numbers" = "أرقام الطوارئ";
 "back_home" = "الرئيسية";
 "Adventure Awaits" = "المغامرة في انتظارك";
-"Plan your Trip and Enjoy a Stress-free Travel full of Adventures and Memories. " = "خطط لرحلتك واستمتع برحلة خالية من الإجهاد مليئة بالمغامرات والذكريات.";
+"Plan your Trip and Enjoy a Stress-free Travel full of Adventures and Memories. " = "خطط لرحلتك واستمتع برحلة خالية من الإجهاد مليئة بالمغامرات والذكريات";
 "Get Started" = "البدء";
 "Emergency Numbers" = "أرقام الطوارئ";
 "997" = "٩٩٧";
@@ -60,5 +60,9 @@
 "Deodorant" = "مزيل عرق";
 "Hair Brush" = "فرشاة الشعر";
 "Emergency Kit" = "طقم الطوارئ";
+"Your_next_trip_on" = "موعد رحلتك القادمة";
+"Coming_soon" = "قريبًا ..";
+"Close" = "إغلاق";
+"New_Item" = "إضافة عنصر";
 
 

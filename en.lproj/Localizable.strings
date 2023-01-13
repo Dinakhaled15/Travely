@@ -7,14 +7,14 @@
 */
 //HOME
 "plan" = "PLAN";
-"your_travel" = "YOUR TRAVEL";
+"your_travel" = "Plan Your Travel";
 "trip_count_down" = "Trip count down";
 "schedule_your_next_trip" = "Schedule your next trip";
 "hello_traveler" = "Hello Traveler!";
-"pre_travel_checklist" = "PRE-TRAVEL CHECKLIST";
-"places" = "PLACES";
-"staying" = "STAYING";
-"emergency_numbers" = "EMERGENCY NUMBERS";
+"pre_travel_checklist" = "Pre-Travel Checklist";
+"places" = "Places";
+"staying" = "Staying";
+"emergency_numbers" = "Emergency Numbers";
 "back_home" = "Home";
 
 "Adventure Awaits" = "Adventure Awaits ";
@@ -53,3 +53,7 @@ Travel full of Adventures and Memories";
 "Deodorant" = "Deodorant" ;
 "Hair Brush" = "Hair Brush";
 "Emergency Kit" = "Emergency Kit " ;
+"Your_next_trip_on" = "Your next trip on";
+"Coming_soon" = "Coming Soon";
+"Close" = "Close";
+"New_Item" = "New item";

@@ -21,6 +21,7 @@
 		1C596422296D58D7005FD1E3 /* PachingChecklist.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1C596420296D58D7005FD1E3 /* PachingChecklist.xcdatamodeld */; };
 		1C596424296D59C9005FD1E3 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C596423296D59C9005FD1E3 /* DataController.swift */; };
 		1C596426296D5DA1005FD1E3 /* testingcore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C596425296D5DA1005FD1E3 /* testingcore.swift */; };
+		1C6A393A2971BB6700931464 /* ComingSoonPopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C6A39392971BB6700931464 /* ComingSoonPopUp.swift */; };
 		1CD84A95296AA907000D321E /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD84A94296AA907000D321E /* Home.swift */; };
 		1CD84A9B296AACDD000D321E /* Gilroy-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1CD84A9A296AACDD000D321E /* Gilroy-Medium.ttf */; };
 		1CD84A9D296AACFF000D321E /* Gilroy-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1CD84A9C296AACFF000D321E /* Gilroy-Regular.ttf */; };
@@ -51,13 +52,14 @@
 		1C596421296D58D7005FD1E3 /* PachingChecklist.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PachingChecklist.xcdatamodel; sourceTree = "<group>"; };
 		1C596423296D59C9005FD1E3 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		1C596425296D5DA1005FD1E3 /* testingcore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testingcore.swift; sourceTree = "<group>"; };
+		1C6A39392971BB6700931464 /* ComingSoonPopUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComingSoonPopUp.swift; sourceTree = "<group>"; };
 		1CD84A94296AA907000D321E /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		1CD84A9A296AACDD000D321E /* Gilroy-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-Medium.ttf"; sourceTree = "<group>"; };
 		1CD84A9C296AACFF000D321E /* Gilroy-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-Regular.ttf"; sourceTree = "<group>"; };
 		1CD84A9E296AAD0A000D321E /* Gilroy-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-Bold.ttf"; sourceTree = "<group>"; };
 		1CD84AA0296AADA5000D321E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		F50D5FCC296E9E0E00729960 /* ii.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ii.swift; sourceTree = "<group>"; };
-		F56D8FDE296A94DD008EC31B /* Nano.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nano.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F56D8FDE296A94DD008EC31B /* Travely.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Travely.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F56D8FE1296A94DD008EC31B /* NanoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NanoApp.swift; sourceTree = "<group>"; };
 		F56D8FE3296A94DD008EC31B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F56D8FE5296A94DE008EC31B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -114,6 +116,7 @@
 				1C59641A296D4B10005FD1E3 /* PackingSections.swift */,
 				1C59641C296D4CFF005FD1E3 /* PackingItems.swift */,
 				1C59641E296D537D005FD1E3 /* AddPackingItem.swift */,
+				1C6A39392971BB6700931464 /* ComingSoonPopUp.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -145,7 +148,7 @@
 		F56D8FDF296A94DD008EC31B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F56D8FDE296A94DD008EC31B /* Nano.app */,
+				F56D8FDE296A94DD008EC31B /* Travely.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -181,9 +184,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		F56D8FDD296A94DD008EC31B /* Nano */ = {
+		F56D8FDD296A94DD008EC31B /* Travely */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F56D8FEC296A94DE008EC31B /* Build configuration list for PBXNativeTarget "Nano" */;
+			buildConfigurationList = F56D8FEC296A94DE008EC31B /* Build configuration list for PBXNativeTarget "Travely" */;
 			buildPhases = (
 				F56D8FDA296A94DD008EC31B /* Sources */,
 				F56D8FDB296A94DD008EC31B /* Frameworks */,
@@ -193,9 +196,9 @@
 			);
 			dependencies = (
 			);
-			name = Nano;
+			name = Travely;
 			productName = Nano;
-			productReference = F56D8FDE296A94DD008EC31B /* Nano.app */;
+			productReference = F56D8FDE296A94DD008EC31B /* Travely.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -213,7 +216,7 @@
 					};
 				};
 			};
-			buildConfigurationList = F56D8FD9296A94DD008EC31B /* Build configuration list for PBXProject "Nano" */;
+			buildConfigurationList = F56D8FD9296A94DD008EC31B /* Build configuration list for PBXProject "Travely" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -227,7 +230,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F56D8FDD296A94DD008EC31B /* Nano */,
+				F56D8FDD296A94DD008EC31B /* Travely */,
 			);
 		};
 /* End PBXProject section */
@@ -273,6 +276,7 @@
 				1C596422296D58D7005FD1E3 /* PachingChecklist.xcdatamodeld in Sources */,
 				F56D8FF6296B3894008EC31B /* search bar.swift in Sources */,
 				1C596426296D5DA1005FD1E3 /* testingcore.swift in Sources */,
+				1C6A393A2971BB6700931464 /* ComingSoonPopUp.swift in Sources */,
 				F56D8FF4296B3283008EC31B /* emergency page.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -419,12 +423,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_ASSET_PATHS = "\"Nano/Preview Content\"";
 				DEVELOPMENT_TEAM = KJ7CQBG56G;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Nano/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Travely;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -450,12 +455,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_ASSET_PATHS = "\"Nano/Preview Content\"";
 				DEVELOPMENT_TEAM = KJ7CQBG56G;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Nano/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Travely;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -478,7 +484,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		F56D8FD9296A94DD008EC31B /* Build configuration list for PBXProject "Nano" */ = {
+		F56D8FD9296A94DD008EC31B /* Build configuration list for PBXProject "Travely" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F56D8FEA296A94DE008EC31B /* Debug */,
@@ -487,7 +493,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F56D8FEC296A94DE008EC31B /* Build configuration list for PBXNativeTarget "Nano" */ = {
+		F56D8FEC296A94DE008EC31B /* Build configuration list for PBXNativeTarget "Travely" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F56D8FED296A94DE008EC31B /* Debug */,

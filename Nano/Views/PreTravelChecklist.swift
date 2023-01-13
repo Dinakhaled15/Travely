@@ -22,15 +22,9 @@ struct PreTravelChecklist: View {
     ]
     @State private var selections = Set<String>()
     var body: some View {
-        VStack{
-            Text("pre_travel_checklist")
-                .accessibilityLabel(Text("pre_travel_checklist"))
-                .frame(maxWidth: .infinity,
-                                               alignment:
-                    .leading)
-            .font(Font.custom(Locale.preferredLanguages[0] == "en" ? "Gilroy-Medium": "Tajawal-Medium", size: 21)).foregroundColor(.white).padding(EdgeInsets(top: 32, leading: 24, bottom: 16, trailing: 24))
+ 
             
-            NavigationView {
+            
                 ScrollView {
                     ForEach(data, id: \.self) { dataItem in
                         PackingSections(section: dataItem)
@@ -38,19 +32,20 @@ struct PreTravelChecklist: View {
                             .animation(.default)
                     }
                  
-                    
+                    .navigationTitle("pre_travel_checklist")
+                    .accessibilityLabel(Text("pre_travel_checklist"))
                 }   .background(.black)
-            }
+   
             
 
             
             
-        }.frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading).background(.black)
+      
     }
 }
 
 struct PreTravelChecklist_Previews: PreviewProvider {
     static var previews: some View {
-        PreTravelChecklist()
+        PreTravelChecklist()  .preferredColorScheme (.dark)
     }
 }

@@ -45,7 +45,7 @@ struct PackingSections: View {
                 }
                 .padding(.leading)
             }
-            Divider()
+         
         }
     }
     

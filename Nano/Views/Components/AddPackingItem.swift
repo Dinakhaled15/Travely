@@ -12,10 +12,11 @@ struct AddPackingItem: View {
     @State private var text: String = ""
     @Environment(\.managedObjectContext) var moc
     var body: some View {
+        
         HStack {
             Image(systemName: "plus")
                 .foregroundColor(Color.white.opacity(0.2))
-            TextField("new item", text: $text).foregroundColor(.white).font(Font.custom(Locale.preferredLanguages[0] == "en" ? "Gilroy-Medium": "Tajawal-Medium", size: 12)).onSubmit {
+            TextField("New_Item", text: $text).foregroundColor(.white).font(Font.custom(Locale.preferredLanguages[0] == "en" ? "Gilroy-Medium": "Tajawal-Medium", size: 12)).onSubmit {
                 let todoItem = TravelChecklist(context: moc)
                 todoItem.id = UUID()
                 todoItem.item = text
@@ -25,7 +26,7 @@ struct AddPackingItem: View {
                   try? moc.save()
                 text = ""
             }
-        }}
+        }.padding(.bottom)}
 }
 
 struct AddPackingItem_Previews: PreviewProvider {

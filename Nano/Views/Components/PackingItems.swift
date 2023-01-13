@@ -29,7 +29,7 @@ struct PackingItems: View {
                                     print(error.localizedDescription)
                                 }
                 }) {
-                Image(systemName: "trash.fill")
+                    Image(systemName: "trash.fill").foregroundColor(Color("primary"))
                 }.padding()
                 
                 

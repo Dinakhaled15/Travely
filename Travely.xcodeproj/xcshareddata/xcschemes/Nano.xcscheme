@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "F56D8FDD296A94DD008EC31B"
-               BuildableName = "Nano.app"
-               BlueprintName = "Nano"
-               ReferencedContainer = "container:Nano.xcodeproj">
+               BuildableName = "Travely.app"
+               BlueprintName = "Travely"
+               ReferencedContainer = "container:Travely.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -46,9 +46,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "F56D8FDD296A94DD008EC31B"
-            BuildableName = "Nano.app"
-            BlueprintName = "Nano"
-            ReferencedContainer = "container:Nano.xcodeproj">
+            BuildableName = "Travely.app"
+            BlueprintName = "Travely"
+            ReferencedContainer = "container:Travely.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -63,9 +63,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "F56D8FDD296A94DD008EC31B"
-            BuildableName = "Nano.app"
-            BlueprintName = "Nano"
-            ReferencedContainer = "container:Nano.xcodeproj">
+            BuildableName = "Travely.app"
+            BlueprintName = "Travely"
+            ReferencedContainer = "container:Travely.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
