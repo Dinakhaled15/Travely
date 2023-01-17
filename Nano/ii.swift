@@ -5,7 +5,8 @@
 //  Created by Dina Alhajj Ibrahim on 11/01/2023.
 //
 var data =
-        [EmergencyInfo(number:  997, type: NSLocalizedString("Ambulance", comment: ""), description: NSLocalizedString("For health issues", comment: "")),
+     
+[EmergencyInfo(number:  997, type: NSLocalizedString("Ambulance", comment: ""), description: NSLocalizedString("For health issues", comment: "")),
         EmergencyInfo(number: 999, type:NSLocalizedString("Police", comment: ""), description: NSLocalizedString("For security issues", comment: "")),
          EmergencyInfo(number:998,  type:NSLocalizedString( "Civil Defense", comment: ""),  description: NSLocalizedString("For fires issues", comment: "")),
         EmergencyInfo(number:993,  type: NSLocalizedString("Traffic Accidents", comment: ""),  description: NSLocalizedString("For car accidents", comment: "")),

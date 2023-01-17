@@ -18,7 +18,11 @@ struct PreTravelChecklist: View {
 //  
 //    
 
-    @State private var data = [ NSLocalizedString("Electronics", comment: ""), NSLocalizedString("Documents", comment: ""),  NSLocalizedString("Clothes", comment: ""), NSLocalizedString("Essentials", comment: "")
+    @State private var data =
+    
+    [ NSLocalizedString("Electronics", comment: "")
+      , NSLocalizedString("Documents", comment: ""),  NSLocalizedString("Clothes", comment: ""), NSLocalizedString("Essentials", comment: "")
+      
     ]
     @State private var selections = Set<String>()
     var body: some View {
